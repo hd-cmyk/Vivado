@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  1 11:40:25 2021
+# Process ID: 12452
+# Current directory: D:/Vivado/Project/single_cycle_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13436 D:\Vivado\Project\single_cycle_cpu\single_cycle_cpu.xpr
+# Log file: D:/Vivado/Project/single_cycle_cpu/vivado.log
+# Journal file: D:/Vivado/Project/single_cycle_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1201.871 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/instructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/SignZeroExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignZeroExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/SingleCycleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleCycleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/single_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.sim/sim_1/behav/xsim'
+"xelab -wto 3fcc67f1049f47d5818aa51bc5157ddc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3fcc67f1049f47d5818aa51bc5157ddc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.SignZeroExtend
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.SingleCycleCPU
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1201.871 ; gain = 0.000
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  1 13:39:42 2021] Launched synth_1...
+Run output will be captured here: D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.runs/synth_1/runme.log
+[Wed Dec  1 13:39:42 2021] Launched impl_1...
+Run output will be captured here: D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.runs/impl_1/runme.log
+open_hw_manager
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  1 13:52:14 2021...

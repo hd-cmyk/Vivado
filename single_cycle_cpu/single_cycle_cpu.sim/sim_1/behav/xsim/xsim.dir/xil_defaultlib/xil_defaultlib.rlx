@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/Vivado/Project/single_cycle_cpu/alu.v,1637639488,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/DataMemory.v,,alu,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/regfile.v,1637917202,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/DataMemory.v,,regfile,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sim_1/new/tb.v,1638370685,verilog,,,,tb,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/Alu.v,1638263491,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/SingleCycleCPU.v,,Alu,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/ControlUnit.v,1638370055,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/Alu.v,,ControlUnit,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/DataMemory.v,1638002202,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/SignZeroExtend.v,,DataMemory,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/PC.v,1638261600,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/ControlUnit.v,,PC,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/SignZeroExtend.v,1637645373,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/PC.v,,SignZeroExtend,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/SingleCycleCPU.v,1638370654,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/single_display.v,,SingleCycleCPU,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/instructionMemory.v,1638363610,verilog,,D:/Vivado/Project/single_cycle_cpu/regfile.v,,instructionMemory,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/pc.v,1637480388,verilog,,D:/Vivado/Project/single_cycle_cpu/regfile.v,,pc,,,,,,,,
+D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/single_display.v,1638514713,verilog,,D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sim_1/new/tb.v,,single_display,,,,,,,,

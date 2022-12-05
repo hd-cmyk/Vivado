@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  1 11:40:25 2021
+# Process ID: 12452
+# Current directory: D:/Vivado/Project/single_cycle_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13436 D:\Vivado\Project\single_cycle_cpu\single_cycle_cpu.xpr
+# Log file: D:/Vivado/Project/single_cycle_cpu/vivado.log
+# Journal file: D:/Vivado/Project/single_cycle_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.xpr
+launch_simulation
+source tb.tcl
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+close_sim
