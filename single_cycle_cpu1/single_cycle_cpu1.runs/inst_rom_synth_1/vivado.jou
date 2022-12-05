@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec 13 23:32:14 2021
+# Process ID: 12640
+# Current directory: D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.runs/inst_rom_synth_1
+# Command line: vivado.exe -log inst_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inst_rom.tcl
+# Log file: D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.runs/inst_rom_synth_1/inst_rom.vds
+# Journal file: D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.runs/inst_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source inst_rom.tcl -notrace

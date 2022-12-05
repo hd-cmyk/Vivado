@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  1 13:32:37 2021
+# Process ID: 4356
+# Current directory: D:/Vivado/Project/single_cycle_cpu1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3008 D:\Vivado\Project\single_cycle_cpu1\single_cycle_cpu1.xpr
+# Log file: D:/Vivado/Project/single_cycle_cpu1/vivado.log
+# Journal file: D:/Vivado/Project/single_cycle_cpu1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/instructionMemory.v] -no_script -reset -force -quiet
+remove_files  D:/Vivado/Project/single_cycle_cpu/single_cycle_cpu.srcs/sources_1/new/instructionMemory.v
+add_files -norecurse D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/new/instructionMemory.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source tb.tcl
+set_property -dict [list CONFIG.coefficient_file {D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/new/inst_rom.coe}] [get_ips inst_rom]
+generate_target all [get_files  D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/ip/inst_rom/inst_rom.xci]
+catch { config_ip_cache -export [get_ips -all inst_rom] }
+export_ip_user_files -of_objects [get_files D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/ip/inst_rom/inst_rom.xci] -no_script -sync -force -quiet
+reset_run inst_rom_synth_1
+launch_runs inst_rom_synth_1 -jobs 4
+wait_on_run inst_rom_synth_1
+export_simulation -of_objects [get_files D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/ip/inst_rom/inst_rom.xci] -directory D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.ip_user_files -ipstatic_source_dir D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/modelsim} {questa=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/questa} {riviera=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+set_property -dict [list CONFIG.coefficient_file {d:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/ip/inst_rom/rom.coe}] [get_ips inst_rom]
+generate_target all [get_files  D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/ip/inst_rom/inst_rom.xci]
+catch { config_ip_cache -export [get_ips -all inst_rom] }
+export_ip_user_files -of_objects [get_files D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/ip/inst_rom/inst_rom.xci] -no_script -sync -force -quiet
+reset_run inst_rom_synth_1
+launch_runs inst_rom_synth_1 -jobs 4
+wait_on_run inst_rom_synth_1
+export_simulation -of_objects [get_files D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.srcs/sources_1/ip/inst_rom/inst_rom.xci] -directory D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.ip_user_files/sim_scripts -ip_user_files_dir D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.ip_user_files -ipstatic_source_dir D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/modelsim} {questa=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/questa} {riviera=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/riviera} {activehdl=D:/Vivado/Project/single_cycle_cpu1/single_cycle_cpu1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source tb.tcl
+run 10 us
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+close_sim
